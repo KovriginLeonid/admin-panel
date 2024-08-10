@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="true" name="HandheldFriendly" />
+  <meta content="width" name="MobileOptimized" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta name="description" content="">
+  <title>location-settings</title>
+
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="css/narmolize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/settings.css">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+</head>
+
+<body>
+  <header class="header">
+
+    <div class="header__container">
+      <div class="header__logo-container">
+        <img src="img/logo.svg" class="header__logo-img" alt="logo">
+        <p class="header__version-text">v 2.01</p>
+      </div>
+      <a href=""><img src="img/logout.svg" class="header__logout-img" alt="logout"></a>
+    </div>
+
+  </header>
+
+  <main>
+
+    <div class="global-content__container">
+
+      <div class="container navigation__container">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <img src="img/property.svg" alt="" class="navigation-item__icon">
+              <a href="" class="navigation__text">Имущество</a>
+            </li>
+            <li class="navigation__item">
+              <img src="img/inventory.svg" alt="" class="navigation-item__icon">
+              <a href="" class="navigation__text">Инвентаризация</a>
+            </li>
+            <li class="navigation__item">
+              <img src="img/personel.svg" alt="" class="navigation-item__icon">
+              <a href="" class="navigation__text">Сотрудники</a>
+            </li>
+            <li class="navigation__item">
+              <img src="img/bell.svg" alt="" class="navigation-item__icon">
+              <a href="" class="navigation__text">Уведомления</a>
+            </li>
+            <li class="navigation__item">
+              <img src="img/locations.svg" alt="" class="navigation-item__icon">
+              <a href="index.html" class="navigation__text">Локации</a>
+            </li>
+            <li class="navigation__item tab__active">
+              <img src="img/settings.svg" alt="" class="navigation-item__icon">
+              <a href="settings.html" class="navigation__text">Настройки</a>
+            </li>
+            <li class="navigation__item">
+              <button class="navigation__hide-button">
+                <span class="hide-button__line-1"></span>
+                <span class="hide-button__line-2"></span>
+                Скрыть меню</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="main-content__container">
+        <h1 class="main__title">Настройки / Локации</h1>
+
+        <div class="locations-control__container">
+          <div class="locations-control">
+            <button class="locations-control__item">Имущество</button>
+            <button class="locations-control__item">Инвентаризация</button>
+            <button class="locations-control__item">Сотрудники</button>
+            <button class="locations-control__item tab__active">Локации</button>
+            <button class="locations-control__item">Уведомления</button>
+            <button class="locations-control__item">Справочники</button>
+            <button class="locations-control__item">Пользователь</button>
+          </div>
+        </div>
+
+        <h2 class="second__title">Настройка полей таблицы</h2>
+
+        <table>
+          <tr class="table__names">
+            <th></th>
+            <th><p>Описание</p></th>
+            <th><p>Сортировка</p></th>
+            <th><p>ID</p></th>
+            <th><p>Тип поля</p></th>
+            <th><p>Выводить в таблицу</p></th>
+            <th><p>Обязательно</p></th>
+            <th><p>Удалить</p></th>
+          </tr>
+
+          <tr class="table__content">
+            <th>
+              <button class="details-button table__details-button"><img src="img/3dots.svg" alt=""></button>
+              Название
+              <button class="details-button table__details-button"><img src="img/edit.svg" alt=""></button>
+            </th>
+            <th><button class="details-button table__details-button"><img src="img/Help.svg" alt=""></button></th>
+            <th><p>500</p></th>
+            <th><p>1001</p></th>
+            <th><p>Строка</p></th>
+            <th>
+              <label class="checkbox__container">
+              <input type="checkbox" name="output"  class="custom__checkbox" id="">
+              <span class="checkmark"></span>
+            </label>
+          </th>
+            <th>
+              <label class="checkbox__container">
+                <input type="checkbox" name="requered"  class="custom__checkbox" id="">
+                <span class="checkmark"></span>
+              </label>
+            </th>
+            <th>
+              <label class="checkbox__container">
+                <input type="checkbox" name="delete"  class="custom__checkbox" id="">
+                <span class="checkmark"></span>
+              </label>
+            </th>
+          </tr>
+
+          <tr class="table__content">
+            <th>
+              <button class="details-button table__details-button"><img src="img/3dots.svg" alt=""></button>
+              Название
+              <button class="details-button table__details-button"><img src="img/edit.svg" alt=""></button>
+            </th>
+            <th><button class="details-button table__details-button"><img src="img/Help.svg" alt=""></button></th>
+            <th><p>510</p></th>
+            <th><p>1002</p></th>
+            <th><p>Число</p></th>
+            <th>
+              <label class="checkbox__container">
+              <input type="checkbox" name="output"  class="custom__checkbox" id="">
+              <span class="checkmark"></span>
+            </label>
+          </th>
+            <th>
+              <label class="checkbox__container">
+                <input type="checkbox" name="requered"  class="custom__checkbox" id="">
+                <span class="checkmark"></span>
+              </label>
+            </th>
+            <th>
+              <label class="checkbox__container">
+                <input type="checkbox" name="delete"  class="custom__checkbox" id="">
+                <span class="checkmark"></span>
+              </label>
+            </th>
+          </tr>
+
+          <tr class="table__content">
+            <th>
+              <button class="details-button table__details-button"><img src="img/3dots.svg" alt=""></button>
+              Название
+              <button class="details-button table__details-button"><img src="img/edit.svg" alt=""></button>
+            </th>
+            <th><button class="details-button table__details-button"><img src="img/Help.svg" alt=""></button></th>
+            <th><p>520</p></th>
+            <th><p>1003</p></th>
+            <th><p>Справочник</p><img src="img/File.svg" alt=""></th>
+            <th>
+              <label class="checkbox__container">
+              <input type="checkbox" name="output"  class="custom__checkbox" id="">
+              <span class="checkmark"></span>
+            </label>
+          </th>
+            <th>
+              <label class="checkbox__container">
+                <input type="checkbox" name="requered"  class="custom__checkbox" id="">
+                <span class="checkmark"></span>
+              </label>
+            </th>
+            <th>
+              <label class="checkbox__container">
+                <input type="checkbox" name="delete"  class="custom__checkbox" id="">
+                <span class="checkmark"></span>
+              </label>
+            </th>
+          </tr>
+
+          <tr class="table__content">
+            <th>
+              <button class="details-button table__details-button"><img src="img/3dots.svg" alt=""></button>
+              Название
+              <button class="details-button table__details-button"><img src="img/edit.svg" alt=""></button>
+            </th>
+            <th><button class="details-button table__details-button"><img src="img/Help.svg" alt=""></button></th>
+            <th><p>530</p></th>
+            <th><p>1004</p></th>
+            <th><p>Файл</p></th>
+            <th>
+              <label class="checkbox__container">
+              <input type="checkbox" name="output"  class="custom__checkbox" id="">
+              <span class="checkmark"></span>
+            </label>
+          </th>
+            <th>
+              <label class="checkbox__container">
+                <input type="checkbox" name="requered"  class="custom__checkbox" id="">
+                <span class="checkmark"></span>
+              </label>
+            </th>
+            <th>
+              <label class="checkbox__container">
+                <input type="checkbox" name="delete"  class="custom__checkbox" id="">
+                <span class="checkmark"></span>
+              </label>
+            </th>
+          </tr>
+
+          <tr class="table__content">
+            <th>
+              <button class="details-button table__details-button"><img src="img/3dots.svg" alt=""></button>
+              Название
+              <button class="details-button table__details-button"><img src="img/edit.svg" alt=""></button>
+            </th>
+            <th><button class="details-button table__details-button"><img src="img/Help.svg" alt=""></button></th>
+            <th><p>540</p></th>
+            <th><p>1005</p></th>
+            <th><p>Строка</p></th>
+            <th>
+              <label class="checkbox__container">
+              <input type="checkbox" name="output"  class="custom__checkbox" id="">
+              <span class="checkmark"></span>
+            </label>
+          </th>
+            <th>
+              <label class="checkbox__container">
+                <input type="checkbox" name="requered"  class="custom__checkbox" id="">
+                <span class="checkmark"></span>
+              </label>
+            </th>
+            <th>
+              <label class="checkbox__container">
+                <input type="checkbox" name="delete"  class="custom__checkbox" id="">
+                <span class="checkmark"></span>
+              </label>
+            </th>
+          </tr>
+
+          <tr class="table__content">
+            <th>
+              <button class="details-button table__details-button"><img src="img/3dots.svg" alt=""></button>
+              Название
+              <button class="details-button table__details-button"><img src="img/edit.svg" alt=""></button>
+            </th>
+            <th><button class="details-button table__details-button"><img src="img/Help.svg" alt=""></button></th>
+            <th><p>550</p></th>
+            <th><p>1006</p></th>
+            <th><p>Справочник</p><img src="img/File.svg" alt=""></th>
+            <th>
+              <label class="checkbox__container">
+              <input type="checkbox" name="output"  class="custom__checkbox" id="">
+              <span class="checkmark"></span>
+            </label>
+          </th>
+            <th>
+              <label class="checkbox__container">
+                <input type="checkbox" name="requered"  class="custom__checkbox" id="">
+                <span class="checkmark"></span>
+              </label>
+            </th>
+            <th>
+              <label class="checkbox__container">
+                <input type="checkbox" name="delete"  class="custom__checkbox" id="">
+                <span class="checkmark"></span>
+              </label>
+            </th>
+          </tr>
+
+          <tr class="table__content">
+            <th>
+              <button class="details-button table__details-button"><img src="img/3dots.svg" alt=""></button>
+              Название
+              <button class="details-button table__details-button"><img src="img/edit.svg" alt=""></button>
+            </th>
+            <th><button class="details-button table__details-button"><img src="img/Help.svg" alt=""></button></th>
+            <th><p>560</p></th>
+            <th><p>1007</p></th>
+            <th><p>Число</p></th>
+            <th>
+              <label class="checkbox__container">
+              <input type="checkbox" name="output"  class="custom__checkbox" id="">
+              <span class="checkmark"></span>
+            </label>
+          </th>
+            <th>
+              <label class="checkbox__container">
+                <input type="checkbox" name="requered"  class="custom__checkbox" id="">
+                <span class="checkmark"></span>
+              </label>
+            </th>
+            <th>
+              <label class="checkbox__container">
+                <input type="checkbox" name="delete"  class="custom__checkbox" id="">
+                <span class="checkmark"></span>
+              </label>
+            </th>
+          </tr>
+
+          <tr class="table__content">
+            <th>
+              <button class="details-button table__details-button"><img src="img/3dots.svg" alt=""></button>
+              Название
+              <button class="details-button table__details-button"><img src="img/edit.svg" alt=""></button>
+            </th>
+            <th><button class="details-button table__details-button"><img src="img/Help.svg" alt=""></button></th>
+            <th><p>570</p></th>
+            <th><p>1008</p></th>
+            <th><p>Текст</p></th>
+            <th>
+              <label class="checkbox__container">
+              <input type="checkbox" name="output"  class="custom__checkbox" id="">
+              <span class="checkmark"></span>
+            </label>
+          </th>
+            <th>
+              <label class="checkbox__container">
+                <input type="checkbox" name="requered"  class="custom__checkbox" id="">
+                <span class="checkmark"></span>
+              </label>
+            </th>
+            <th>
+              <label class="checkbox__container">
+                <input type="checkbox" name="delete"  class="custom__checkbox" id="">
+                <span class="checkmark"></span>
+              </label>
+            </th>
+          </tr>
+
+          <tr class="table__content">
+            <th>
+              <button class="details-button table__details-button"><img src="img/3dots.svg" alt=""></button>
+              Название
+              <button class="details-button table__details-button"><img src="img/edit.svg" alt=""></button>
+            </th>
+            <th><button class="details-button table__details-button"><img src="img/Help.svg" alt=""></button></th>
+            <th><p>580</p></th>
+            <th><p>1009</p></th>
+            <th><p>Число</p></th>
+            <th>
+              <label class="checkbox__container">
+              <input type="checkbox" name="output"  class="custom__checkbox" id="">
+              <span class="checkmark"></span>
+            </label>
+          </th>
+            <th>
+              <label class="checkbox__container">
+                <input type="checkbox" name="requered"  class="custom__checkbox" id="">
+                <span class="checkmark"></span>
+              </label>
+            </th>
+            <th>
+              <label class="checkbox__container">
+                <input type="checkbox" name="delete"  class="custom__checkbox" id="">
+                <span class="checkmark"></span>
+              </label>
+            </th>
+          </tr>
+        </table>
+
+        <button class="add-field__button"><img src="img/plus.svg" alt="">Добавить поле</button>
+
+
+      </div>
+    </div>
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer-button__container">
+        <button class="settings__save-button"><img src="img/save.svg" alt="">Сохранить</button>
+        <button class="settings__cancel-button">Отменить</button>
+      </div>
+      <a href="" class="footer-documentation"><img src="img/document.svg" class="documentation-logo"
+          alt="">Документация</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

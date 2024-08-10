@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="true" name="HandheldFriendly" />
+  <meta content="width" name="MobileOptimized" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta name="description" content="">
+  <title>locations</title>
+
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="css/narmolize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+</head>
+
+<body>
+  <header class="header">
+
+    <div class="header__container">
+      <div class="header__logo-container">
+        <img src="img/logo.svg" class="header__logo-img" alt="logo">
+        <p class="header__version-text">v 2.01</p>
+      </div>
+      <a href=""><img src="img/logout.svg" class="header__logout-img" alt="logout"></a>
+    </div>
+
+  </header>
+
+  <main>
+
+    <div class="global-content__container">
+
+      <div class="container navigation__container">
+        <nav class="navigation">
+          <ul class="navigation__list">
+           <li class="navigation__item">
+            <img src="img/property.svg" alt="" class="navigation-item__icon">
+            <a href="" class="navigation__text">Имущество</a></li>
+           <li class="navigation__item">
+            <img src="img/inventory.svg" alt="" class="navigation-item__icon">
+            <a href="" class="navigation__text">Инвентаризация</a></li>
+           <li class="navigation__item">
+            <img src="img/personel.svg" alt="" class="navigation-item__icon">
+            <a href="" class="navigation__text">Сотрудники</a></li>
+           <li class="navigation__item">
+            <img src="img/bell.svg" alt="" class="navigation-item__icon">
+            <a href="" class="navigation__text">Уведомления</a></li>
+           <li class="navigation__item tab__active">
+            <img src="img/locations.svg" alt="" class="navigation-item__icon">
+            <a href="index.html" class="navigation__text">Локации</a></li>
+           <li class="navigation__item">
+            <img src="img/settings.svg" alt="" class="navigation-item__icon">
+            <a href="settings.html" class="navigation__text">Настройки</a></li>
+            <li class="navigation__item">
+              <button class="navigation__hide-button">
+                <span class="hide-button__line-1"></span>
+                <span class="hide-button__line-2"></span>
+                Скрыть меню</button></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="main-content__container">
+        <h1 class="main__title">Локации / Все локации</h1>
+
+        <div class="locations-control__container">
+          <div class="locations-control">
+            <button class="locations-control__item tab__active">Все локации</button>
+            <button class="locations-control__item">Импорт/Экспорт</button>
+            <button class="locations-control__item">Настройки</button>
+          </div>
+          <button class="control__synchronization-button">
+            <img src="img/refresh.svg" alt="" class="synchronization-button__icon">синхронизация
+            <p class="synchronization-button__date">(17.05.2024 15:23:21)</p>
+          </button>
+        </div>
+
+
+        <div class="create-location__container">
+          <div class="create-location__button-container">
+            <button class="create-location__button">
+              <img src="img/plus.svg" alt="">
+              Создать локацию
+            </button>
+
+            <dialog class="create-location__modal">
+              <h3 class="modal__title">Создать локацию</h3>
+              <form class="modal__form" method="dialog" action="">
+                <input type="text" class="modal__text-input" placeholder="Название">
+                <input type="text" class="modal__text-input" placeholder="Штрихкод">
+                <input type="text" class="modal__text-input" placeholder="RFID">
+                <input type="text" class="modal__text-input" placeholder="Вложенность">
+                <div class="modal-checkbox__container">
+                  <p>Виртуальная локация</p>
+                  <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+                <div class="modal-checkbox__container">
+                  <p>Локация для утерь</p>
+                  <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+                <div class="modal-buttons__container">
+                  <button class="modal__submit-button" type="submit"><img src="img/save.svg" class="submit-button__logo" alt="">Создать</button>
+                  <button class="modal__close-button">Отменить</button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+
+          <div class="search__container">
+            <label class="checkbox__container">
+              <input type="checkbox" name="Agreement"  class="search__checkbox custom__checkbox" id="">Поиск по точному вхождению
+              <span class="checkmark"></span>
+            </label>
+            <div class="search-input__container">
+              <input type="text" name="input" placeholder="Поиск" class="search">
+              <button class="search__button"><img src="img/search.svg" class="search__icon" alt="search"></button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="locations-managment__container">
+
+          <div class="main-location__container">
+            <div class="location__container">
+              <button class="location__open-button">
+                <span class="open-button__line"></span>
+                <span class="open-button__line-2"></span>
+              </button>
+              <button class="location__details-button details-button"><img src="img/3dots.svg" alt=""></button>
+              <p class="location-name">Локация 1</p>
+              <p class="location-size">512</p>
+              <div class="location-edit__container">
+                <button class="location__edit-button"><img src="img/edit.svg" alt="" class="location__edit-icon">Редактировать</button>
+
+                <dialog class="edit-location__modal">
+                  <h3 class="modal__title">Изменить локацию %название%</h3>
+                  <form class="modal__form" method="dialog" action="">
+                    <label class="input__label">Название<input type="text" class="modal__text-input" placeholder="Название"></label>
+                    <label class="input__label">Штрихкод<input type="text" class="modal__text-input" placeholder="Штрихкод"></label>
+                    <label class="input__label">RFID<input type="text" class="modal__text-input" placeholder="RFID"></label>
+                    <label class="input__label">Вложенность<input type="text" class="modal__text-input" placeholder="Вложенность"></label>
+                    <div class="modal-checkbox__container">
+                      <p>Виртуальная локация</p>
+                      <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                    <div class="modal-checkbox__container">
+                      <p>Локация для утерь</p>
+                      <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                    <div class="modal-buttons__container">
+                      <button class="modal__delete-button" type="submit"><img src="img/x.svg" class="submit-button__logo" alt="">Удалить</button>
+                      <button class="modal__close-button">Отменить</button>
+                    </div>
+                    <button class="modal__save-button" type="submit"><img src="img/save.svg" class="submit-button__logo" alt="">Создать</button>
+                  </form>
+                </dialog>
+              </div>
+
+              <button class="location__delete-button"><img src="img/x.svg" alt="" class="location__delete-icon">Удалить</button>
+              
+            </div>
+
+            <div class="location__container sub-location__container">
+              <button class="location__open-button">
+                <span class="open-button__line"></span>
+                <span class="open-button__line-2"></span>
+              </button>
+              <button class="location__details-button details-button"><img src="img/3dots.svg" alt=""></button>
+              <p class="location-name">Подотдел 1</p>
+              <p class="location-size">10</p>
+              <p class="location-status__1">Для утерь</p>
+              <p class="location-status__2"></p>
+            </div>
+
+            <div class="location__container sub-location__container">
+              <button class="location__open-button">
+                <span class="open-button__line"></span>
+                <span class="open-button__line-2"></span>
+              </button>
+              <button class="location__details-button details-button"><img src="img/3dots.svg" alt=""></button>
+              <p class="location-name">Подотдел 2</p>
+              <p class="location-size">100</p>
+              <p class="location-status__1"></p>
+              <p class="location-status__2"></p>
+            </div>
+
+            <div class="location__container sub-location__container sub-sub-location__container">
+              <button class="location__details-button details-button"><img src="img/3dots.svg" alt=""></button>
+              <p class="location-name">Подподотдел 1</p>
+              <p class="location-size">2</p>
+              <p class="location-status__1">Виртуальная</p>
+              <p class="location-status__2">Без штрихкода</p>
+            </div>
+
+            <div class="location__container sub-location__container">
+              <button class="location__open-button">
+                <span class="open-button__line"></span>
+                <span class="open-button__line-2"></span>
+              </button>
+              <button class="location__details-button details-button"><img src="img/3dots.svg" alt=""></button>
+              <p class="location-name">Подотдел 3</p>
+              <p class="location-size">400</p>
+              <p class="location-status__1"></p>
+              <p class="location-status__2"></p>
+            </div>
+          </div>
+
+          
+
+          <div class="main-location__container">
+            <div class="location__container">
+              <button class="location__open-button">
+                <span class="open-button__line"></span>
+                <span class="open-button__line-2"></span>
+              </button>
+              <button class="location__details-button details-button"><img src="img/3dots.svg" alt=""></button>
+              <p class="location-name">Локация 2</p>
+              <p class="location-size">100</p>
+              <div class="location-edit__container">
+                <button class="location__edit-button"><img src="img/edit.svg" alt="" class="location__edit-icon">Редактировать</button>
+              </div>
+              <button class="location__delete-button"><img src="img/x.svg" alt="" class="location__delete-icon">Удалить</button>
+            </div>
+          </div>
+
+          <div class="main-location__container">
+            <div class="location__container">
+              <button class="location__open-button">
+                <span class="open-button__line"></span>
+                <span class="open-button__line-2"></span>
+              </button>
+              <button class="location__details-button details-button"><img src="img/3dots.svg" alt=""></button>
+              <p class="location-name">Локация 3</p>
+              <p class="location-size">100</p>
+              <button class="location__edit-button"><img src="img/edit.svg" alt="" class="location__edit-icon">Редактировать</button>
+              <button class="location__delete-button"><img src="img/x.svg" alt="" class="location__delete-icon">Удалить</button>
+            </div>
+
+            <div class="location__container sub-location__container">
+              <button class="location__open-button">
+                <span class="open-button__line"></span>
+                <span class="open-button__line-2"></span>
+              </button>
+              <button class="location__details-button details-button"><img src="img/3dots.svg" alt=""></button>
+              <p class="location-name">Подотдел 1</p>
+              <p class="location-size">10</p>
+              <p class="location-status__1">Для утерь</p>
+              <p class="location-status__2"></p>
+            </div>
+
+            <div class="location__container sub-location__container">
+              <button class="location__open-button">
+                <span class="open-button__line"></span>
+                <span class="open-button__line-2"></span>
+              </button>
+              <button class="location__details-button details-button"><img src="img/3dots.svg" alt=""></button>
+              <p class="location-name">Подотдел 1</p>
+              <p class="location-size">10</p>
+              <p class="location-status__1">Для утерь</p>
+              <p class="location-status__2"></p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer-text__container">
+          <p class="last-reception">Последний приём 20.09.2021 18:36:21</p>
+          <p class="last-translation">Последняя передача  20.09.2021 18:38:21</p>
+        </div>
+        <a href="" class="footer-documentation"><img src="img/document.svg" class="documentation-logo" alt="">Документация</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

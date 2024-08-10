@@ -1,0 +1,125 @@
+
+table {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.63px;
+    margin-bottom: 18px;
+    padding-right: 30px;
+    width: 100%;
+    border-spacing: 0px;
+}
+
+.table__names {
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16.9px;
+}
+
+table tr {
+    height: 60px;
+}
+
+th:first-child, td:first-child  {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+th:last-child, td:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+th, td {
+    vertical-align: middle;
+    text-align: start;
+}
+
+tr:nth-child(2n) {
+    background-color: #FFFFFF;
+}
+
+.table__names th {
+    padding-left: 9px;
+}
+
+.table__content th:first-child {
+    padding-left: 30px;
+}
+
+.table__content th:nth-child(5) p:has(+ img) {
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.table__content img {
+    vertical-align: middle;
+}
+
+.table__content th:nth-child(3) p {
+    padding: 7px 15px;
+    width: fit-content;
+    text-align: center;
+    border: 1px solid #EFEFEF;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+.table__details-button {
+    margin-right: 10px;
+}
+
+.add-field__button {
+    margin-bottom: 30px;
+    padding: 17px 49px 17px 49px;
+    font-family: 'Futura PT';
+    font-size: 14px;
+    line-height: 16.41px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background-color: #172139;
+}
+
+.add-field__button img {
+    margin-right: 10px;
+}
+
+.footer-button__container {
+    margin-left: 320px;
+}
+
+.settings__save-button {
+    margin-right: 20px;
+    padding: 17px 40px;
+    color: #FFFFFF;
+    font-family: 'Futura PT';
+    font-size: 14px;
+    line-height: 16.41px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: #172139;
+    border-radius: 5px;
+    border: none;
+}
+
+.settings__save-button img {
+    margin-right: 10px;
+}
+
+.settings__cancel-button {
+    box-sizing: border-box;
+    padding: 17px 53px;
+    text-transform: uppercase;
+    font-family: 'Futura PT';
+    font-size: 14px;
+    line-height: 16.41px;
+    letter-spacing: 0.1em;
+    background: #FFFFFF;
+    border: 1px solid #172139;
+    border-radius: 5px;
+}
+
